@@ -1,0 +1,20 @@
+﻿@model CustomerViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<form method="post" asp-action="Export" asp-controller="Home" >
+    <input asp-for="Customers" value="@Model?.Customers"/>
+    
+
+    <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+   
+     <button class="btn btn-primary" type="submit"  title="Filtrasiya">
+                                   Ixrac
+     </button>
+</div>
+</form>
+
+<h1>Salam</h1>
+
+
